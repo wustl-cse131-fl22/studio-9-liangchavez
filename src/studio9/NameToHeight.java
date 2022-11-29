@@ -1,5 +1,7 @@
 package studio9;
 
+import static org.junit.Assert.assertArrayEquals;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -19,6 +21,19 @@ public class NameToHeight {
 	 */
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
+		
+		Map<String, String> nameHeight = new HashMap<String, String>();
+		nameHeight.put("Kevin", "185");
+		nameHeight.put("Bob", "165");
+		nameHeight.put("John", "300");
+		
+		while (nameHeight.isEmpty()==false || in.next() !=null) {
+		
+		System.out.println(nameHeight.get(in.next()));
+		
+		}
+		
+		
 
 		// FIXME
 		throw new NotYetImplementedException();
